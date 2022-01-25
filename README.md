@@ -13,6 +13,6 @@ cumulus.save(today) | cumulus.balance == 0.01
 #### Domain Model
 
 * Class -> Cumulus
-* Method -> .save(today=Date.new)
+* Method -> .save(today=Time.new)
 * Properties -> balance_saved, balance_available, dates_saved
 
