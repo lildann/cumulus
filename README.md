@@ -5,14 +5,14 @@ An algorithm that saves 1p on the first day you start saving, 2p on the second d
 INPUT | OUTPUT
 ------|-------
 cumulus.save(today) | cumulus.balance == 0.01
-2.times cumulus.save(today) | cumulus.balance == 0.03
-3.times cumulus.save(today) | cumulus.balance == 0.06
-343.times cumulus.save(today) | cumulus.balance == 589.96
+2.times cumulus.save(today) | cumulus.savings_balance == 0.03
+3.times cumulus.save(today) | cumulus.savings_balance == 0.06
+343.times cumulus.save(today) | cumulus.savings_balance == 589.96
 
 
 #### Domain Model
 
 * Class -> Cumulus
 * Method -> .save(today=Time.new)
-* Properties -> balance_saved, balance_available, days_saved
+* Properties -> savings_balance, available_balance, days_saved
 
