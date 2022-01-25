@@ -14,5 +14,5 @@ cumulus.save(today) | cumulus.balance == 0.01
 
 * Class -> Cumulus
 * Method -> .save(today=Time.new)
-* Properties -> balance_saved, balance_available, dates_saved
+* Properties -> balance_saved, balance_available, days_saved
 

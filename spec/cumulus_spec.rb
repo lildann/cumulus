@@ -6,4 +6,10 @@ describe Cumulus do
     cumulus.save(Time.new)
     expect(cumulus.balance).to eq(0.01)
   end
+
+  it 'should save 2p on the second day' do
+    cumulus = Cumulus.new 
+    2.times { cumulus.save(Time.new) }
+    expect(cumulus.balance).to eq(0.03)
+  end
 end

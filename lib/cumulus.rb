@@ -3,9 +3,11 @@ class Cumulus
 
   def initialize
     @balance = 0
+    @days_saved = []
   end
 
   def save(today=Time.new)
-    @balance += 0.01
+    @days_saved << today
+    @balance += 0.01 * @days_saved.length
   end
 end
